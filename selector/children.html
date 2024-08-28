@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자식 자손 선택지</title>
+  <!--
+  !important = id도 이긴다. 앵간차면 쓰지말것!
+  -->
+  <style>
+
+    p>span {
+      color: blue;
+    }
+    p strong {
+      color: red;
+    }
+    strong {
+      color: black !important;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  부모만 자식을 가져올수 있다.
+  손자부터는 자손
+  -->
+<!--자식-->
+  <p>
+    <span>글자색 테스트
+    </span>
+  </p>
+<!--자손-->
+  <p>
+    <span>
+      <strong>글자색테스트2</strong>
+    </span>
+  </p>
+  <p>
+    <p>
+      <span>
+        <p>
+          <p>
+            <p>
+              <span>
+                <span>
+                  <p>
+                    <p><strong>자손이오다</strong></p>
+                  </p>
+                </span>
+              </span>
+            </p>
+          </p>
+        </p>
+      </span>
+    </p>
+  </p>
+</body>
+</html>

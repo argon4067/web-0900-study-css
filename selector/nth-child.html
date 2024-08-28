@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth-child</title>
+  <!--
+  n+3 3이상 가져와라
+  -n+3 3번째까지만 가져와
+  -->
+  <style>
+    #container li:nth-child(4){
+      color: blue;
+    }
+    #container li:nth-child(n+3){
+      color: red;
+    }
+    #container li:first-child{
+      color: purple;
+    }
+    #container li:last-child(){
+      color: skyblue;
+    }
+    #container li:nth-child(even){
+      color: rgb(71, 144, 122);
+    }
+    #container li:nth-child(odd){
+      color: rgb(144, 205, 31);
+    }
+    #container li:nth-child(-n+3){
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul id="container">
+    <li>container의 자식</li>
+    <p></p>
+    <li>container의 자식</li>
+    <li>container의 자식</li>
+    <li>container의 자식</li>
+    <p></p>
+    <li>container의 자식</li>
+    <li>container의 자식</li>
+    <p></p>
+    <li>container의 자식</li>
+    <p></p>
+    <li>container의 자식</li>
+  </ul>
+  
+</body>
+</html>
