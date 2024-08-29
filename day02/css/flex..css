@@ -1,0 +1,38 @@
+#flex-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  border: solid 1px black;
+  /* 메인축 담당 : justify-content */
+  /* 자식사이의 공간에 관련됨 :space */
+  /* between : 양옆에붙으면서 사이간격만 */
+  /* evenly : 모든 간격 일정*/
+  /* around : 사이간격 일정*/
+  /* justify-content: space-around; */
+
+  /* 반대축 담당 : align-items */
+  /* align-items: center; */
+
+  /* 하나만 정의 할때 : align-self */
+
+  /* 부모크기 보다 자식이 크면 내려가기 */
+  /* flex-wrap: wrap; */
+  row-gap: 4px;
+  column-gap: 4px;
+}
+/* 부모를 기준으로 */
+/* 좌에서 우로 : main axis = 메인축 */
+/* 위에서 아래로 : cross axis = 반대축 */
+
+
+#flex-wrap .box {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  background-color: green;
+}
+
+#flex-wrap .box5 {
+  align-self: center;
+}
