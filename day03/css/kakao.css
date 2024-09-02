@@ -132,5 +132,17 @@ input,select{vertical-align:middle}
 
 }
 
+.main {
+  
+  width: 675px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-center {
+  width: 675px;
+  display: block;
+}
+
 
 

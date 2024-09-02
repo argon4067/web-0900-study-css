@@ -1,0 +1,39 @@
+#star {
+  animation: star 1s infinite;
+}
+
+p {
+  animation: letter 2s forwards;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: aqua;
+  animation: bounce 0.3s infinite;
+}
+
+
+
+
+
+@keyframes star {
+  0% { transform: translate(0, 0);
+  opacity: 0;}
+  100% {transform: translate(0, 0);
+  opacity: 1;}
+}
+
+@keyframes letter {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(0, -80px);}
+}
+
+@keyframes bounce {
+  0% {transform: translate(0,0);}
+  25% {transform: translate(0, +20px);}
+  50% {transform: translate(0, 0);}
+  75% {transform: translate(0, -20px);}
+  100% {transform: translate(0, 0);}
+}
