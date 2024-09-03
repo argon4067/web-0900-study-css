@@ -1,0 +1,39 @@
+/* 1번방법
+#grid-wrapper {
+  display: grid;
+  grid-template-areas: none
+  "a a a a"
+  "b b c c"
+  "d e f g"
+  ;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+} */
+
+/* 2번 방법 */
+#grid-wrapper {
+  /* 그리드 선언 */
+  display: grid;
+  /* 템플릿 선언 */
+  grid-template: 
+  "a a a a" 100px
+  "b b c c" 100px
+  "d e f g" 100px
+  / 100px 100px 100px 100px ;
+  gap: 4px;
+  
+}
+
+.box {
+  background-color: orange;
+
+}
+
+.box:nth-child(1) {
+  background-color: green;
+  grid-area: a;
+}
+
+.box:nth-child(9) {
+  background-color: aqua;
+}
